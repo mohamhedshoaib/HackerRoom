@@ -22,12 +22,6 @@ public class flatJson {
 			String flattenedJson = JsonFlattener.flatten(jsonObject.toString());
 			log("Flatten json \n" + flattenedJson);
  
-//			Map<String, Object> flattenedJsonMap = JsonFlattener.flattenAsMap(jsonObject.toString());
-// 
-//			log("\n=====Flatten As Map=====\n" + flattenedJson);
-//
-//			flattenedJsonMap.forEach((k, v) -> log(k + " : " + v));
- 
 			// Unflatten it back to original JSON
 			String nestedJson = JsonUnflattener.unflatten(flattenedJson);
 			System.out.println("\nUnflatten JSON  \n" + nestedJson);
